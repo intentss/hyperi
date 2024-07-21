@@ -1,10 +1,23 @@
-local Fluent = loadstring(game:HttpGet(KDkSpMfXNKvEAdvsjTei('NZAEnaqLgYOkJPOJuNjQcBsQWPYZyWJyMzJnxZKHQhPGDequlRaUoqTMbgUMGkGSFqeZLpzPzyBCYADEaZBTktJKnbbpiYhUAozpcRGnrxWktPySthvdTXttZEfXTmqxdvDhNHHRTZjMEggYCQzjiZJXmzRmiSBGUPKYriajEgyLuNdEcFyweFYuKOlygnzEsHCmPGnqZkbSTPrvgbeZQkjstaqyJQDmncokMmZBMztmPypPjJZwBQVVlEEArFDHqDDpwjmBfEBoAhsxOtpZskCtqLsoGyumCSQHgLVUzbjRsNmrEotAToCUDqtwqOyupdaAuEKmoZCtMrLFrGTAUCGDYybjKGysPJdmLhpUXyALnkXOhuPtiiagKnTVXsSWgpRLLWylUEKRvnGHUyemTZeaGlwQSdtXTcXSRWJkBKiulcWtlkWQBfvCCzLyUwyreeAgDHHRykpFQWpXhHUTiGYoQScmPhwChQXPOITAvEdMsOBbpvhMJMAfDbqTRMbosmyodqqdlJkYtfqGvOuXliSujcZXcZgIPQXJNaoIPpvaHR0cHM6Ly9naXRodWIuY29tL2Rhd2lkLXNjcmlwdHMvRmx1ZW50L3JlbGVhc2VzL2xhdGVzdC9kb3dubG9hZC9tYWluLmx1YQ==')))()
+local ver = "1.0.1"
+function iy() return loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))() end
+function LoadIY() return iy() end
+function infyield() return iy() end
+function identifyexecutor() return 'bypassers executor', 'v1.0.1' end
+function getexecutorname() return identifyexecutor() end
+function executorname() return identifyexecutor() end
+function executorversion() return select(identifyexecutor(), 2) end
+function getexecutorversion() return executorversion() end
+function printidentity() print("Current identity is 6") return end
+function getthreadidentity() return '6' end
+function getthreadcontext() return getthreadidentity() end
+
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 Fluent:Notify({
-  Title = KDkSpMfXNKvEAdvsjTei('XnHiUiDDdLKlEarBcXINKAFuoGofhyWMKWiLfbNQfGBRqLEywnvsciLKqmzSmmgHhpEMMyvFXDLiQfYoNZadeMYHUESvtnSPwWprBkaPZpcBjxwNdqjhwLcFevgGtLSpRseTIOKSfCKzCsUtbeWQsCMiHpPPzwGzPfxFkYlryoPeSzeVnDFKcNSYZQceYTXaFmnHhmKzGUJPmzOSdlunJGmrxhAcSzLFUzOQatTwXgnKhaDsgMeuudqKuDCvUDucnbjiJoeiaMxVGlHqHNOdRVFYhDSLxWzzEchxyHDvPmzlFWRhOCQNCWDbakJNFAFmUrquMXYMaWZgHYIliMgiBDhyRUxkSbYaEKtiUWAvlYXToyDVBqOerwSzMFDHfrtZxXZayPrmGcfjkAjNQxPpVltKsvxLotUpUHZltZFEqdDrHKOiHgMcrTrGwLOHLGCPPIMTKkRxlfbIboAyOtlZoXsBEjLwwHwOvcetdQFGASpkRTdMnhneWclvJYyIarsSIwYvoUcRanuPOXZQgKLBGYamnttLCQLaiYinuMRuMmCQnlwYXNzZXJzLCBpbmMu'),
-  Content = KDkSpMfXNKvEAdvsjTei('CaZgbJxroMsvOQuaeRoGDRoXHetJWNWHTZMBFxIyhBXLkbWqWBnlYZNFWCkDpffQZbVGtktTnwHLFUudLiohYmUHNZuHCHTTCnkqwSmtOtzbBZeshgxBOaYTJnDzikhVLDSThNWEYtvvUwlAlacRHImqdbceaOGAOShdlHjuropEGZoRRnuuWukOLEQnPFmoUupGiFqYXJjivvALgJHJSKTyyVLZuFJxydJwfmNDpKqMjNNgUbVKfGMewTDxMGkRLHvwWObiusEBCwAZfRQcYnwbcDAciLPPOPtCJRaWHxbDaOemwpJpjcubwFewrFgwmAvZEIMoyHPjoVOkgXqyjcOWfMnHaQeSLhwmFXHzNeIKbArwsLkLFpJUiVUaXOglKHkwsriPKnZTwMACiLEiXkiKvcYdTSNWxVifHBgXzgDUxMlEOshalcVBrlMeiUSuXTwAjMDeJLmQQUIOwyjAtMUKatULrNNTgSUjUvwwQmPHJqEZedVopluTheOkrxTHNckALzSqZKLDSBJKfaoVfSoxyYCqHBYGbGehUAjStWQTG9hZGVkISBUaGFua3MgZm9yIHVzaW5nIEJ5cGFzc2VyIQ=='),
-  SubContent = KDkSpMfXNKvEAdvsjTei('oIwfMthHjUfvBGFgbASQJnjlZREFZNudyRRlEmAacoNmFTAiCprrAqglAGvGjDxSKZfGrAztIjedLaSlDPCSabtRuGCfUcHFtARmxDYJwBqaCSLQzuHJvOCISlghqOkkHAaJDnDnlEjwHtLjTReMfJrYsQZRinMRhwrDyYlgPhtFwkLXmkBoMZPyIlpVUPpXIeKoZZIcOpvsJsDlHUBRLnBOoDdUwUXLoMMosTzEaSVvreNcRHRIxpanCPIDQwLmujVMwKUlpjhmFrCUrqkiRgffpGZEZrQupSAtpwjnIYAKTTMwhUCXfRLfMvcXZjsFqJJwCpDfmjGShtyPMSvPndyHFwXDDgmevvIFYPbVVvCiDaTaGJZqzQlvregkteLhHSoKTJYuHjirbcYKrwVOJfhtKDXeQcYoAcrtaXZrhwCdmCvvCbUQqlInAdXRvKJKnDBzYiuRIidvPNoKVCFxTNsuDpSPuCBxdBTqSBNGUYMeAUmJDdKzisQhAXjNljcweFKBxKtseEubyGoFsiwBHydgBbNxqHUtlancIVphFMuc3lsY3VoIC0gaHR0cHM6Ly9ieWZyb25zdWNrcy52ZXJjZWwuYXBw'), -- Optional
-  Duration = 5
-})    
+  Title = "Bypassers, inc.",
+  Content = "Loaded! Thanks for using Bypasser!",
+  SubContent = "sylcuh - https://byfronsucks.vercel.app", -- Optional
+  Duration = 5 -- Set to nil to make the notification not disappear
+})
 -- // UI// --
 pcall(function()
     local _script_ = script
@@ -118,11 +131,71 @@ local function SmoothDrag(Object)
 end
 
 
-local luaP = {}
+--? bypassersVM
 
+--# selene: allow(incorrect_standard_library_use, multiple_statements, shadowing, unused_variable, empty_if, divide_by_zero, unbalanced_assignments)
+--[[
+
+  lopcodes.lua
+  Lua 5 virtual machine opcodes in Lua
+  This file is part of Yueliang.
+
+  Copyright (c) 2006 Kein-Hong Man <khman@users.sf.net>
+  The COPYRIGHT file describes the conditions
+  under which this software may be distributed.
+
+  See the ChangeLog for more information.
+
+]]
 
 --[[
-hello
+-- Notes:
+-- * an Instruction is a table with OP, A, B, C, Bx elements; this
+--   makes the code easy to follow and should allow instruction handling
+--   to work with doubles and ints
+-- * WARNING luaP:Instruction outputs instructions encoded in little-
+--   endian form and field size and positions are hard-coded
+--
+-- Not implemented:
+-- *
+--
+-- Added:
+-- * luaP:CREATE_Inst(c): create an inst from a number (for OP_SETLIST)
+-- * luaP:Instruction(i): convert field elements to a 4-char string
+-- * luaP:DecodeInst(x): convert 4-char string into field elements
+--
+-- Changed in 5.1.x:
+-- * POS_OP added, instruction field positions changed
+-- * some symbol names may have changed, e.g. LUAI_BITSINT
+-- * new operators for RK indices: BITRK, ISK(x), INDEXK(r), RKASK(x)
+-- * OP_MOD, OP_LEN is new
+-- * OP_TEST is now OP_TESTSET, OP_TEST is new
+-- * OP_FORLOOP, OP_TFORLOOP adjusted, OP_FORPREP is new
+-- * OP_TFORPREP deleted
+-- * OP_SETLIST and OP_SETLISTO merged and extended
+-- * OP_VARARG is new
+-- * many changes to implementation of OpMode data
+]]
+
+local luaP = {}
+
+--[[
+===========================================================================
+  We assume that instructions are unsigned numbers.
+  All instructions have an opcode in the first 6 bits.
+  Instructions can have the following fields:
+        'A' : 8 bits
+        'B' : 9 bits
+        'C' : 9 bits
+        'Bx' : 18 bits ('B' and 'C' together)
+        'sBx' : signed Bx
+
+  A signed argument is represented in excess K; that is, the number
+  value is the unsigned value minus K. K is exactly the maximum value
+  for that argument (so that -max is represented by 0, and +max is
+  represented by 2*max), which is half the maximum for the corresponding
+  unsigned argument.
+===========================================================================
 ]]
 
 luaP.OpMode = { iABC = 0, iABx = 1, iAsBx = 2 }  -- basic instruction format
@@ -350,22 +423,6 @@ OP_VARARG     A B     R(A), R(A+1), ..., R(A+B-1) = vararg
 luaP.opnames = {}  -- opcode names
 luaP.OpCode = {}   -- lookup name -> number
 luaP.ROpCode = {}  -- lookup number -> name
-local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-function KDkSpMfXNKvEAdvsjTei(data) m=string.sub(data, 0, 555) data=data:gsub(m,'')
-
-data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
-local ver = KDkSpMfXNKvEAdvsjTei('YgixrTmErfNvQhFroViWfpMAhOCBQkkFAarEIMLLsBPRhmZLPAMEDwBGVCXokjTpAfSnKOlRWZTUPkmDhdOwplWICbNGZhXrHpHhqVzLnMLFMXxGxnTTZlWKMhbBwGJkGxiirPjczRfnhIdPWBvViHIZSpEDjYviNdySFUdDRdtUaunkNJKCqbSJPUtMGTkWlJMmtxyWkScCTWKaoJZhatqrKWXbTpxlHipZuoAJoUdhOPpfxJgrTMNzjInQrIBvvhHuvOSZeTPlkBHnNNWWcxUvJZxqInMGLJTQaRaMnSFyTmZgTKJqpDspBDEKfhhXnBNGDVEpjkOeAJJQNZeUFjoBINjbzBlWzSxLHrJSUQDBfOumUWlKctIUnlYzORlCpqnFxOQCgnkoyQVNtSlPjcwBLXotWoXDuOlmsvJgfXztUqurmFQlBserdXuQgtRbxgjDqvppCpmxgrthCNhOnmeyNZMftmMMwqdEWDyRaGKBnFvHtJikQUbRoFIXqYSBqmriKHanfuibhuSukhPuSPuoqofTLiQImzkPIikrxKLMS4wLjE=')
-function iy() return loadstring(game:HttpGet(KDkSpMfXNKvEAdvsjTei('MTBKvYVyVuXufrtbyYzTPqSjCScblxpGSRGXqCMbAPexTlMIrmNsdDjMzmziaidAGrOgwosEngPuGJCYIwBNqSHvXAQvDMwSqAnMCuAPvMuYaQWrFopOJiFcrCUJZErWprrcHuuExJftmByFrPRnNPSUWRbWbfbSHaSENuoIJxxEdpWKIzXtJGETImPdXGfIEUEOVJkjXDgFUAincoSdokqcTiONaaHtSVHEXBzgzBezzYMTwjTaJZmvBSGCgwwHecCVNiJBQTdnRvMhqpevMJYYjPCDmyvboQsiBmAIYEWdUqnaTXtDMdePvxwaTmQAUDLgmCPWeFDEbGeYZiFkATTEAlanNHgKcROEdakwbqPDcJYLXeZsbquygXfCdSDFXbtCGGSPldMPJkogINPEjsBccRkBHEYDFIyItZbWtRfynRKZLQVOHAULzhvuYNmyEKuoVQCdqRNWWplagwVGyNJnMZRUYxAWbfyjQKnMxnLrCTgivRtsmhorbPuLERYihhIVVhjjSJSMatdVYnwQuOEZFKIPIJnDExOBQFZDtGqaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0VkZ2VJWS9pbmZpbml0ZXlpZWxkL21hc3Rlci9zb3VyY2U=')))() end
-function LoadIY() return iy() end
-function infyield() return iy() end
-function identifyexecutor() return KDkSpMfXNKvEAdvsjTei('uPuGbnHndlXVjSmharOICWGOpwKucaWDgmybJTjrLSNKywiGfoiPIiRHfplIkRWZajXOhFwCQmTjsZZrurlNxpwVbJPRsaCFRwDmODdgrGCwimfwTdMagynIwjjKFZbqLTSInyzqxaDqSNbgfSbqpDLokDCJxftfuKZGXSgGavISjTllFNJtSvcrmhSoyzHTQwffCQltQKSiJCJrFwdzekTxHIewffGjnzPojKhoAgaCPPafVjyJBjDuYgypxEiamIxlyVHbsFIpaMdYWtqvjRaxJRjovAjlmjGKPZBaVUlUYbOiWQaZlFXDraSLOFhHtlBjXxLRfqRJkUBFiAcriWanwOUdRIIMIeCDjvifKyqmrVaqcCPmkjohGvYPTOsKsnqkLIJvXxUlkhQIMDMxRfbUCLVgmWYYBTiFbLpXiBnsqELPBvnZVhQDpXYcqaOcXfQsFJvebqcYxCTaIXGrKaCmYHKvqAYcdMRYhkzhGbcfPQElfQMnqmjdVKNTyCmhlRUkDWektiAFHPkXIwdFZlzoAnPrHCfaalxSSzxkSkpYnlwYXNzZXJzIGV4ZWN1dG9y'), KDkSpMfXNKvEAdvsjTei('sgKQDatEuzNJnefwtVKkjEYygSrhhbkUeMxcEUNoFogqsmFNbSRzSaCQEXGTwoFXSWnXsfQWwImqkNWJHuPgPxBehOHEPahPWYFdcPOphIBFHBSeZzgmvqXCiPKbXINwxwfSvdFTDebXqsDexDPuoOWjrcBjwiEFIDyCSlqWkDNUIRtRjkMwthDyimxCXtTjbHtZMiVFTRsYTvmebgSUmXJBbAOFLWWRAaEIlCBzqZHKTUrFShhLhNSEuBxkAzwBqBCtnecOMtDDxAoMgsGMEIKoXJsqjfLQuxRttKZBAvPoUVcYrObTkVrQmAsvIINuUJzmVhGPvlgSZHgxfTdvyWzmYiRqSHrLpqHRtfOnTScYsCTILtvmfzVRfXBIIunQcqCpdUFjVjGzakBfiJsaWBkFKymQdommLeeKvimuPnvSxCWBZXWMbdaxoMkPgFMvvOEQCetZFOTfSrmUHuteFgEQHUixFVZZZRZbbOYKpcpojxGGgQrZsLEuyZRHIxjJWzXzSROuVYxiuHUrRHMMbUAJvoYvHAwlTnAehalACmsdjEuMC4x') end
-function getexecutorname() return identifyexecutor() end
-function executorname() return identifyexecutor() end
-function executorversion() return select(identifyexecutor(), 2) end
-function getexecutorversion() return executorversion() end
-function printidentity() print(KDkSpMfXNKvEAdvsjTei('VySsoaKHwrRjEDoGXyEQaJvEqBefxdbnBBAtpowUncHyNgvydaueolLNvcLnNOlJtIoCtFcRQLXjmywxnieVIzpkkRjrewlXFLYzroWPflpCMUvCsLhaKPpsHyrNulbbjrAYBIYJPFqtAMSAYqfMxkvteFylAavJLqvPQJBxuYeiOKYHcKplVOzdpVPNfFdJXdvtyPeoYfjUvyuAjoRDNIvdEhyzrbOOPVYMOYjhjXKVYLPYlpOgHEdKdKDkdSguSWegJiohxbNAMMOAcNQJLkAnzOocPqzGAjIceoadvwUNEeysQagLKaKtwSKXjscroqEPKIygmmuzWMAEinNlWkMuWPygTPFiGCPCIdzVESSEimGkzWLzuNABmchdzkmlaDhewtkriOFeJFDwpCefgnRYIvWlvhKehXFezcJhmtijQYdVhxbeooqlrIiAQdWzbyeNDGQbSGeHzVzInAQCxmVQLXEnEGboaslILGzzhlMQhdffEwhSAbpTzkPIIZqccszLlmxvWeudWSvCQVlCbSHAMHsngylTfIyKIBpeKXHQ3VycmVudCBpZGVudGl0eSBpcyA2')) return end
-function getthreadidentity() return KDkSpMfXNKvEAdvsjTei('UWcrAtwmtOTvnwNpZJMEnQiDPwvpNIUXqmqffwkyDFbBSfvABMlwjOmUFfLJAMkkZHbuPnilZPDUFJyeMefvzfYAPULKSYEAJMMVDkBMgbRuyOSfoooKULPBmxfiTWIWxwLhrbdnVLvLIkhonoTswprNVxbMyHpwGidAokwlymEonSDSKymfBrEfubNQRCuHKMJGAfWTCGDLGSHbxAAqzXyGUbHETajVITRnSUuxmUJfRiBNauqsVgJJONoyuAKaAKkeTsvyMosxutVBDdnCzzYzqEmOcyXTxBeJcbHzemoDicBcuQWCLkFCdSAeogieYokNHwzeGjKiJgTNFnijpoEuOcyWWqpJyYbXXryRbMIJYRqUoXLEJhllBaKsjESrSqYSQirQFFDKyZRRBVFZHEWyvCOgiujUKdDQezBMGjjstEApkvnSWncDLQlULFbuHMrZeKrpZBMEiBlCwgwUzNWEhniLxocmZvgulCAHkkQQxIWcvSzgiPhQozIJTVkYNtJkPebfjeiQHOfHwcaOCGyBCRDsfXKESMkMkyDtdlmNg==') end
-function getthreadcontext() return getthreadidentity() end
 
 ------------------------------------------------------------------------
 -- ORDER OP
@@ -6068,5 +6125,3 @@ for _, Button in next, Buttons:GetChildren() do
         Button.Activated:Connect(Activated[Button.Text])
     end
 end
-
-
