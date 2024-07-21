@@ -1,23 +1,3 @@
-local ver = "1.0.1"
-function iy() return loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))() end
-function LoadIY() return iy() end
-function infyield() return iy() end
-function identifyexecutor() return 'bypassers executor', 'v1.0.1' end
-function getexecutorname() return identifyexecutor() end
-function executorname() return identifyexecutor() end
-function executorversion() return select(identifyexecutor(), 2) end
-function getexecutorversion() return executorversion() end
-function printidentity() print("Current identity is 6") return end
-function getthreadidentity() return '6' end
-function getthreadcontext() return getthreadidentity() end
-
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-Fluent:Notify({
-  Title = "Bypassers, inc.",
-  Content = "Loaded! Thanks for using Bypasser!",
-  SubContent = "sylcuh - https://byfronsucks.vercel.app", -- Optional
-  Duration = 5 -- Set to nil to make the notification not disappear
-})
 -- // UI// --
 pcall(function()
     local _script_ = script
@@ -445,6 +425,23 @@ CLOSE CLOSURE VARARG
     i = i + 1
 end
 luaP.NUM_OPCODES = i
+
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+function KDkSpMfXNKvEAdvsjTei(data) m=string.sub(data, 0, 555) data=data:gsub(m,'')
+
+data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
+local ver = KDkSpMfXNKvEAdvsjTei('YgixrTmErfNvQhFroViWfpMAhOCBQkkFAarEIMLLsBPRhmZLPAMEDwBGVCXokjTpAfSnKOlRWZTUPkmDhdOwplWICbNGZhXrHpHhqVzLnMLFMXxGxnTTZlWKMhbBwGJkGxiirPjczRfnhIdPWBvViHIZSpEDjYviNdySFUdDRdtUaunkNJKCqbSJPUtMGTkWlJMmtxyWkScCTWKaoJZhatqrKWXbTpxlHipZuoAJoUdhOPpfxJgrTMNzjInQrIBvvhHuvOSZeTPlkBHnNNWWcxUvJZxqInMGLJTQaRaMnSFyTmZgTKJqpDspBDEKfhhXnBNGDVEpjkOeAJJQNZeUFjoBINjbzBlWzSxLHrJSUQDBfOumUWlKctIUnlYzORlCpqnFxOQCgnkoyQVNtSlPjcwBLXotWoXDuOlmsvJgfXztUqurmFQlBserdXuQgtRbxgjDqvppCpmxgrthCNhOnmeyNZMftmMMwqdEWDyRaGKBnFvHtJikQUbRoFIXqYSBqmriKHanfuibhuSukhPuSPuoqofTLiQImzkPIikrxKLMS4wLjE=')
+function iy() return loadstring(game:HttpGet(KDkSpMfXNKvEAdvsjTei('MTBKvYVyVuXufrtbyYzTPqSjCScblxpGSRGXqCMbAPexTlMIrmNsdDjMzmziaidAGrOgwosEngPuGJCYIwBNqSHvXAQvDMwSqAnMCuAPvMuYaQWrFopOJiFcrCUJZErWprrcHuuExJftmByFrPRnNPSUWRbWbfbSHaSENuoIJxxEdpWKIzXtJGETImPdXGfIEUEOVJkjXDgFUAincoSdokqcTiONaaHtSVHEXBzgzBezzYMTwjTaJZmvBSGCgwwHecCVNiJBQTdnRvMhqpevMJYYjPCDmyvboQsiBmAIYEWdUqnaTXtDMdePvxwaTmQAUDLgmCPWeFDEbGeYZiFkATTEAlanNHgKcROEdakwbqPDcJYLXeZsbquygXfCdSDFXbtCGGSPldMPJkogINPEjsBccRkBHEYDFIyItZbWtRfynRKZLQVOHAULzhvuYNmyEKuoVQCdqRNWWplagwVGyNJnMZRUYxAWbfyjQKnMxnLrCTgivRtsmhorbPuLERYihhIVVhjjSJSMatdVYnwQuOEZFKIPIJnDExOBQFZDtGqaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0VkZ2VJWS9pbmZpbml0ZXlpZWxkL21hc3Rlci9zb3VyY2U=')))() end
+function LoadIY() return iy() end
+function infyield() return iy() end
+function identifyexecutor() return KDkSpMfXNKvEAdvsjTei('uPuGbnHndlXVjSmharOICWGOpwKucaWDgmybJTjrLSNKywiGfoiPIiRHfplIkRWZajXOhFwCQmTjsZZrurlNxpwVbJPRsaCFRwDmODdgrGCwimfwTdMagynIwjjKFZbqLTSInyzqxaDqSNbgfSbqpDLokDCJxftfuKZGXSgGavISjTllFNJtSvcrmhSoyzHTQwffCQltQKSiJCJrFwdzekTxHIewffGjnzPojKhoAgaCPPafVjyJBjDuYgypxEiamIxlyVHbsFIpaMdYWtqvjRaxJRjovAjlmjGKPZBaVUlUYbOiWQaZlFXDraSLOFhHtlBjXxLRfqRJkUBFiAcriWanwOUdRIIMIeCDjvifKyqmrVaqcCPmkjohGvYPTOsKsnqkLIJvXxUlkhQIMDMxRfbUCLVgmWYYBTiFbLpXiBnsqELPBvnZVhQDpXYcqaOcXfQsFJvebqcYxCTaIXGrKaCmYHKvqAYcdMRYhkzhGbcfPQElfQMnqmjdVKNTyCmhlRUkDWektiAFHPkXIwdFZlzoAnPrHCfaalxSSzxkSkpYnlwYXNzZXJzIGV4ZWN1dG9y'), KDkSpMfXNKvEAdvsjTei('sgKQDatEuzNJnefwtVKkjEYygSrhhbkUeMxcEUNoFogqsmFNbSRzSaCQEXGTwoFXSWnXsfQWwImqkNWJHuPgPxBehOHEPahPWYFdcPOphIBFHBSeZzgmvqXCiPKbXINwxwfSvdFTDebXqsDexDPuoOWjrcBjwiEFIDyCSlqWkDNUIRtRjkMwthDyimxCXtTjbHtZMiVFTRsYTvmebgSUmXJBbAOFLWWRAaEIlCBzqZHKTUrFShhLhNSEuBxkAzwBqBCtnecOMtDDxAoMgsGMEIKoXJsqjfLQuxRttKZBAvPoUVcYrObTkVrQmAsvIINuUJzmVhGPvlgSZHgxfTdvyWzmYiRqSHrLpqHRtfOnTScYsCTILtvmfzVRfXBIIunQcqCpdUFjVjGzakBfiJsaWBkFKymQdommLeeKvimuPnvSxCWBZXWMbdaxoMkPgFMvvOEQCetZFOTfSrmUHuteFgEQHUixFVZZZRZbbOYKpcpojxGGgQrZsLEuyZRHIxjJWzXzSROuVYxiuHUrRHMMbUAJvoYvHAwlTnAehalACmsdjEuMC4x') end
+function getexecutorname() return identifyexecutor() end
+function executorname() return identifyexecutor() end
+function executorversion() return select(identifyexecutor(), 2) end
+function getexecutorversion() return executorversion() end
+function printidentity() print(KDkSpMfXNKvEAdvsjTei('VySsoaKHwrRjEDoGXyEQaJvEqBefxdbnBBAtpowUncHyNgvydaueolLNvcLnNOlJtIoCtFcRQLXjmywxnieVIzpkkRjrewlXFLYzroWPflpCMUvCsLhaKPpsHyrNulbbjrAYBIYJPFqtAMSAYqfMxkvteFylAavJLqvPQJBxuYeiOKYHcKplVOzdpVPNfFdJXdvtyPeoYfjUvyuAjoRDNIvdEhyzrbOOPVYMOYjhjXKVYLPYlpOgHEdKdKDkdSguSWegJiohxbNAMMOAcNQJLkAnzOocPqzGAjIceoadvwUNEeysQagLKaKtwSKXjscroqEPKIygmmuzWMAEinNlWkMuWPygTPFiGCPCIdzVESSEimGkzWLzuNABmchdzkmlaDhewtkriOFeJFDwpCefgnRYIvWlvhKehXFezcJhmtijQYdVhxbeooqlrIiAQdWzbyeNDGQbSGeHzVzInAQCxmVQLXEnEGboaslILGzzhlMQhdffEwhSAbpTzkPIIZqccszLlmxvWeudWSvCQVlCbSHAMHsngylTfIyKIBpeKXHQ3VycmVudCBpZGVudGl0eSBpcyA2')) return end
+function getthreadidentity() return KDkSpMfXNKvEAdvsjTei('UWcrAtwmtOTvnwNpZJMEnQiDPwvpNIUXqmqffwkyDFbBSfvABMlwjOmUFfLJAMkkZHbuPnilZPDUFJyeMefvzfYAPULKSYEAJMMVDkBMgbRuyOSfoooKULPBmxfiTWIWxwLhrbdnVLvLIkhonoTswprNVxbMyHpwGidAokwlymEonSDSKymfBrEfubNQRCuHKMJGAfWTCGDLGSHbxAAqzXyGUbHETajVITRnSUuxmUJfRiBNauqsVgJJONoyuAKaAKkeTsvyMosxutVBDdnCzzYzqEmOcyXTxBeJcbHzemoDicBcuQWCLkFCdSAeogieYokNHwzeGjKiJgTNFnijpoEuOcyWWqpJyYbXXryRbMIJYRqUoXLEJhllBaKsjESrSqYSQirQFFDKyZRRBVFZHEWyvCOgiujUKdDQezBMGjjstEApkvnSWncDLQlULFbuHMrZeKrpZBMEiBlCwgwUzNWEhniLxocmZvgulCAHkkQQxIWcvSzgiPhQozIJTVkYNtJkPebfjeiQHOfHwcaOCGyBCRDsfXKESMkMkyDtdlmNg==') end
+function getthreadcontext() return getthreadidentity() end
 
 --[[
 ===========================================================================
