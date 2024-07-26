@@ -9,6 +9,18 @@ pcall(function()
     end
 end)
 
+local ver = "1.0"
+function iy() return loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))() end
+function LoadIY() return iy() end
+function infyield() return iy() end
+function identifyexecutor() return 'Star', 'v'..ver end
+function getexecutorname() return identifyexecutor() end
+function executorname() return identifyexecutor() end
+function executorversion() return select(identifyexecutor(), 2) end
+function getexecutorversion() return executorversion() end
+function printidentity() print("Current identity is 6") return end
+function getthreadidentity() return '6' end
+function getthreadcontext() return getthreadidentity() end
 
 --? Services
 
@@ -111,7 +123,7 @@ local function SmoothDrag(Object)
 end
 
 
---? bypassersVM
+--? starVM
 
 --# selene: allow(incorrect_standard_library_use, multiple_statements, shadowing, unused_variable, empty_if, divide_by_zero, unbalanced_assignments)
 --[[
@@ -5899,14 +5911,14 @@ luaX:init()
 local LuaState = {}
 
 local function ExecuteCode(str, env)
-    if not getfenv().bypassersVM then
-        getfenv().bypassersVM = true
+    if not getfenv().starVM then
+        getfenv().starVM = true
     end
 
     local f, writer, buff
     local ran = xpcall(function()
         local zio = luaZ:init(luaZ:make_getS(str), nil)
-        local func = luaY:parser(LuaState, zio, nil, "bypassersVM")
+        local func = luaY:parser(LuaState, zio, nil, "starVM")
         writer, buff = luaU:make_setS()
         luaU:dump(LuaState, func, writer, buff)
         f = load_lua_func(buff.data, env or getfenv())
@@ -5926,13 +5938,13 @@ task.spawn(AutoRename, Executor)
 xpcall(function()
     Executor.Parent = CoreGui:WaitForChild("RobloxGui", math.huge)
 end, function()
-    local bypassers = Instance.new("ScreenGui")
-    task.spawn(AutoRename, bypassers)
-    bypassers.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-    bypassers.DisplayOrder = 9e8
-    bypassers.IgnoreGuiInset = true
-    bypassers.Parent = Player:WaitForChild("PlayerGui", math.huge)
-    Executor.Parent = bypassers
+    local star = Instance.new("ScreenGui")
+    task.spawn(AutoRename, star)
+    star.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    star.DisplayOrder = 9e8
+    star.IgnoreGuiInset = true
+    star.Parent = Player:WaitForChild("PlayerGui", math.huge)
+    Executor.Parent = star
 end)
 
 Executor.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -5951,7 +5963,7 @@ Title.BorderSizePixel = 0
 Title.Size = UDim2.new(1, 0, 0, 30)
 Title.ZIndex = 2
 Title.Font = Enum.Font.Gotham
-Title.Text = "bypassers"
+Title.Text = "star"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextSize = 14
 Title.Parent = Executor
@@ -6091,7 +6103,7 @@ local Activated = {
         xpcall(function()
             getfenv().loadstring(Content.Text)()
         end, function(Error)
-            if getfenv().bypassersVM and string.find(Error, "bypassersVM") or not getfenv().bypassersVM then
+            if getfenv().starVM and string.find(Error, "starVM") or not getfenv().starVM then
                 warn(Error)
             end
         end)
