@@ -333,27 +333,27 @@ Attach.Text = "Attach"
 Attach.TextColor3 = Color3.fromRGB(255, 255, 255)
 Attach.TextSize = 14.000
 Attach.MouseButton1Click:Connect(function()
-    print("hi")
+    print("Star has loaded!")
     if injected == true then
-        title.Text = "Star Internal -v1.0 (already injected!)"
+        title.Text = "Star Internal - v1.0.3 (already injected!)"
         wait(1)
-        title.Text = "Star Internal -v1.0"
+        title.Text = "Star Internal - v1.0.3 (injected)"
     end
     if injected == false then
-        title.Text = "Star Internal -v1.0 (checking...)"
+        title.Text = "Star Internal - v1.0.3 (checking...)"
         wait(0.1)
-        title.Text = "Star Internal -v1.0 (injecting...)"
+        title.Text = "Star Internal - v1.0.3 (injecting...)"
         wait(1.5)
         setfpscap(1)
         wait(1)
         setfpscap(6969)
-        title.Text = "Star Internal -v1.0 (checking whitelist...)"
+        title.Text = "Star Internal - v1.0.3 (checking version...)"
         wait(0.8)
-        title.Text = "Star Internal -v1.0 (scanning...)"
+        title.Text = "Star Internal - v1.0.3 (scanning...)"
         wait(0.3)
-        title.Text = "Star Internal -v1.0 (ready!)"
+        title.Text = "Star Internal - v1.0.3 (ready!)"
         wait(0.5)
-        title.Text = "Star Internal -v1.0"
+        title.Text = "Star Internal - v1.0.3 (injected)"
         injected = true
     end
 end)
