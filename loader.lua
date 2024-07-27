@@ -68,7 +68,7 @@ local injected = false
 
 --Properties:
 
-SynapseXreal.Name = "Star Internal - Synapse Edition"
+SynapseXreal.Name = "Star Internal - Public Release v1.0.3"
 SynapseXreal.Parent = game.CoreGui
 SynapseXreal.ResetOnSpawn = false
 
