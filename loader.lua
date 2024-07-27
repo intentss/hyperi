@@ -1,5 +1,19 @@
 -- Instances:
 
+local ver = "1.0.3"
+function iy() return loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))() end
+function LoadIY() return iy() end
+function infyield() return iy() end
+function identifyexecutor() return 'star public release', 'v'..ver end
+function getexecutorname() return identifyexecutor() end
+function executorname() return identifyexecutor() end
+function executorversion() return select(identifyexecutor(), 2) end
+function getexecutorversion() return executorversion() end
+function printidentity() print("Current identity is 6") return end
+function getthreadidentity() return '6' end
+function getthreadcontext() return getthreadidentity() end
+function hookfunction() return false end
+
 local SynapseXreal = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local bar = Instance.new("Frame")
