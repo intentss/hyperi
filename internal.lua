@@ -1,3 +1,12 @@
+local StarterGui = game:GetService("StarterGui")
+
+StarterGui:SetCore("SendNotification", {
+    Title = "star internal"; -- Title of the notification
+    Text = "Loaded! Thanks for using star internal. [FREE VERSION]"; -- Message of the notification
+    Duration = 5; -- Duration in seconds the notification should appear
+})
+
+
 local Instances = {
 	ScreenGui = Instance.new("ScreenGui"),
 	exec = Instance.new("Frame"),
