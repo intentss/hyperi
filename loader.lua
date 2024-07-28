@@ -1,16 +1,171 @@
--- Instances:
+local Instances = {
+	ScreenGui = Instance.new("ScreenGui"),
+	exec = Instance.new("Frame"),
+	console = Instance.new("ImageLabel"),
+	Frame = Instance.new("Frame"),
+	UICorner = Instance.new("UICorner"),
+	Clear = Instance.new("TextButton"),
+	UICorner_2 = Instance.new("UICorner"),
+	ImageButton = Instance.new("ImageButton"),
+	Execute = Instance.new("TextButton"),
+	UICorner_3 = Instance.new("UICorner"),
+	ImageButton_2 = Instance.new("ImageButton"),
+	UICorner_4 = Instance.new("UICorner"),
+	tab = Instance.new("Frame"),
+	UICorner_5 = Instance.new("UICorner"),
+	greek = Instance.new("TextLabel"),
+	name = Instance.new("TextBox"),
+	Code = Instance.new("ScrollingFrame"),
+	Source = Instance.new("TextBox"),
+	TopBar = Instance.new("Frame"),
+	Close = Instance.new("ImageButton"),
+	TextLabel = Instance.new("TextLabel"),
+}
 
-function INFtIrJYcWWLngDhzARLJMEVQAkOWEHlTamSKHpUJplNtuReEFqkvrjcEpSUGjJMH(c)
-tab={}
-for i = 1,#c do
-x=string.len(c[i]) 
-y=string.char(x)
-table.insert(tab,y)
-end
-x=table.concat(tab)
-return x
-end 
+Instances.ScreenGui.Name = "ScreenGui"
+Instances.ScreenGui.IgnoreGuiInset = false
+Instances.ScreenGui.DisplayOrder = 0
+Instances.ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
+Instances.exec.Name = "exec"
+Instances.exec.NextSelectionLeft = nil
+Instances.exec.Active = false
+Instances.exec.Selectable = false
+Instances.exec.AnchorPoint = Vector2.new(0, 0)
+Instances.exec.NextSelectionRight = nil
+Instances.exec.ZIndex = 1
+Instances.exec.AutomaticSize = Enum.AutomaticSize.None
+Instances.exec.Size = UDim2.new(0, 649, 0, 288)
+Instances.exec.Visible = true
+Instances.exec.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Instances.exec.NextSelectionDown = nil
+Instances.exec.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.exec.SelectionOrder = 0
+Instances.exec.SelectionImageObject = nil
+Instances.exec.LayoutOrder = 0
+Instances.exec.Rotation = 0
+Instances.exec.ClipsDescendants = false
+Instances.exec.BackgroundTransparency = 0
+Instances.exec.Position = UDim2.new(0.189205363, 0, 0.202429146, 0)
+Instances.exec.BorderMode = Enum.BorderMode.Outline
+Instances.exec.NextSelectionUp = nil
+Instances.exec.BorderSizePixel = 0
+Instances.exec.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+Instances.exec.Style = Enum.FrameStyle.Custom
+Instances.exec.Parent = Instances.ScreenGui
+
+Instances.console.Name = "console"
+Instances.console.NextSelectionLeft = nil
+Instances.console.Active = false
+Instances.console.Selectable = false
+Instances.console.AnchorPoint = Vector2.new(0, 0)
+Instances.console.NextSelectionRight = nil
+Instances.console.ZIndex = 1
+Instances.console.AutomaticSize = Enum.AutomaticSize.None
+Instances.console.Size = UDim2.new(0, 25, 0, 27)
+Instances.console.Visible = true
+Instances.console.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Instances.console.NextSelectionDown = nil
+Instances.console.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.console.SelectionOrder = 0
+Instances.console.SelectionImageObject = nil
+Instances.console.LayoutOrder = 0
+Instances.console.Rotation = 0
+Instances.console.ClipsDescendants = false
+Instances.console.BackgroundTransparency = 1
+Instances.console.Position = UDim2.new(0.0103306472, 0, 0.892361104, 0)
+Instances.console.BorderMode = Enum.BorderMode.Outline
+Instances.console.NextSelectionUp = nil
+Instances.console.BorderSizePixel = 0
+Instances.console.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Instances.console.ImageColor3 = Color3.fromRGB(255, 255, 255)
+Instances.console.ScaleType = Enum.ScaleType.Stretch
+Instances.console.ImageTransparency = 0
+Instances.console.ResampleMode = Enum.ResamplerMode.Default
+Instances.console.TileSize = UDim2.new(1, 0, 1, 0)
+Instances.console.ImageRectSize = Vector2.new(0, 0)
+Instances.console.SliceScale = 1
+Instances.console.ImageRectOffset = Vector2.new(0, 0)
+Instances.console.Image = "rbxassetid://17204990908"
+Instances.console.SliceCenter = Rect.new(Vector2.new(0, 0), Vector2.new(0, 0))
+Instances.console.Parent = Instances.exec
+
+Instances.Frame.Name = "Frame"
+Instances.Frame.NextSelectionLeft = nil
+Instances.Frame.Active = false
+Instances.Frame.Selectable = false
+Instances.Frame.AnchorPoint = Vector2.new(0, 0)
+Instances.Frame.NextSelectionRight = nil
+Instances.Frame.ZIndex = 1
+Instances.Frame.AutomaticSize = Enum.AutomaticSize.None
+Instances.Frame.Size = UDim2.new(0, 22, 0, 22)
+Instances.Frame.Visible = true
+Instances.Frame.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Instances.Frame.NextSelectionDown = nil
+Instances.Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.Frame.SelectionOrder = 0
+Instances.Frame.SelectionImageObject = nil
+Instances.Frame.LayoutOrder = 0
+Instances.Frame.Rotation = 0
+Instances.Frame.ClipsDescendants = false
+Instances.Frame.BackgroundTransparency = 0
+Instances.Frame.Position = UDim2.new(0, 27, 0, 3)
+Instances.Frame.BorderMode = Enum.BorderMode.Outline
+Instances.Frame.NextSelectionUp = nil
+Instances.Frame.BorderSizePixel = 0
+Instances.Frame.BackgroundColor3 = Color3.fromRGB(197, 102, 255)
+Instances.Frame.Style = Enum.FrameStyle.Custom
+Instances.Frame.Parent = Instances.console
+
+Instances.UICorner.Name = "UICorner"
+Instances.UICorner.CornerRadius = UDim.new(1, 0)
+Instances.UICorner.Parent = Instances.Frame
+
+Instances.Clear.Name = "Clear"
+Instances.Clear.NextSelectionLeft = nil
+Instances.Clear.Active = true
+Instances.Clear.Selectable = true
+Instances.Clear.AnchorPoint = Vector2.new(0, 0)
+Instances.Clear.NextSelectionRight = nil
+Instances.Clear.ZIndex = 1
+Instances.Clear.AutomaticSize = Enum.AutomaticSize.None
+Instances.Clear.Size = UDim2.new(0, 71, 0, 27)
+Instances.Clear.Visible = true
+Instances.Clear.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Instances.Clear.NextSelectionDown = nil
+Instances.Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.Clear.SelectionOrder = 0
+Instances.Clear.SelectionImageObject = nil
+Instances.Clear.LayoutOrder = 0
+Instances.Clear.Rotation = 0
+Instances.Clear.ClipsDescendants = false
+Instances.Clear.BackgroundTransparency = 0
+Instances.Clear.Position = UDim2.new(0.74000001, 0, 0.892361104, 0)
+Instances.Clear.BorderMode = Enum.BorderMode.Outline
+Instances.Clear.NextSelectionUp = nil
+Instances.Clear.BorderSizePixel = 0
+Instances.Clear.BackgroundColor3 = Color3.fromRGB(54, 55, 54)
+Instances.Clear.Modal = false
+Instances.Clear.Selected = false
+Instances.Clear.Style = Enum.ButtonStyle.Custom
+Instances.Clear.AutoButtonColor = true
+Instances.Clear.TextYAlignment = Enum.TextYAlignment.Center
+Instances.Clear.RichText = false
+Instances.Clear.TextDirection = Enum.TextDirection.Auto
+Instances.Clear.TextColor3 = Color3.fromRGB(215, 215, 215)
+Instances.Clear.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+Instances.Clear.Text = "Clear    "
+Instances.Clear.TextXAlignment = Enum.TextXAlignment.Right
+Instances.Clear.TextStrokeTransparency = 1
+Instances.Clear.TextWrapped = false
+Instances.Clear.TextSize = 16
+Instances.Clear.TextTransparency = 0
+Instances.Clear.TextTruncate = Enum.TextTruncate.None
+Instances.Clear.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+Instances.Clear.MaxVisibleGraphemes = -1
+Instances.Clear.TextScaled = false
+Instances.Clear.LineHeight = 1
+Instances.Clear.Parent = Instances.exec
 
 local ver = INFtIrJYcWWLngDhzARLJMEVQAkOWEHlTamSKHpUJplNtuReEFqkvrjcEpSUGjJMH({'£££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££'})
 function iy() return loadstring(game:HttpGet(INFtIrJYcWWLngDhzARLJMEVQAkOWEHlTamSKHpUJplNtuReEFqkvrjcEpSUGjJMH({'££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££'})))() end
@@ -24,820 +179,564 @@ function getexecutorversion() return executorversion() end
 function printidentity() print(INFtIrJYcWWLngDhzARLJMEVQAkOWEHlTamSKHpUJplNtuReEFqkvrjcEpSUGjJMH({'£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££','££££££££££££££££££££££££££££££££££££££££££££££££££££££'})) return end
 function getthreadidentity() return INFtIrJYcWWLngDhzARLJMEVQAkOWEHlTamSKHpUJplNtuReEFqkvrjcEpSUGjJMH({'££££££££££££££££££££££££££££££££££££££££££££££££££££££'}) end
 function getthreadcontext() return getthreadidentity() end
-function hookfunction() return false end    
 
-local SynapseXreal = Instance.new("ScreenGui")
-local MainFrame = Instance.new("Frame")
-local bar = Instance.new("Frame")
-local Close = Instance.new("TextButton")
-local ImageLabel = Instance.new("ImageLabel")
-local security = Instance.new("TextLabel")
-local EditorFrame = Instance.new("ScrollingFrame")
-local Source = Instance.new("TextBox")
-local Comments_ = Instance.new("TextLabel")
-local Globals_ = Instance.new("TextLabel")
-local Keywords_ = Instance.new("TextLabel")
-local RemoteHighlight_ = Instance.new("TextLabel")
-local Strings_ = Instance.new("TextLabel")
-local Tokens_ = Instance.new("TextLabel")
-local Numbers_ = Instance.new("TextLabel")
-local Lines = Instance.new("TextLabel")
-local title = Instance.new("TextLabel")
-local list = Instance.new("Frame")
-local execute = Instance.new("TextButton")
-local clear = Instance.new("TextButton")
-local scripthub = Instance.new("TextButton")
-local Attach = Instance.new("TextButton")
-local title_2 = Instance.new("ImageLabel")
-local scripthub_2 = Instance.new("Frame")
-local bar_2 = Instance.new("Frame")
-local select = Instance.new("Frame")
-local dex = Instance.new("TextButton")
-local esp = Instance.new("TextButton")
-local spy = Instance.new("TextButton")
-local dumper = Instance.new("TextButton")
-local desc = Instance.new("Frame")
-local descri = Instance.new("TextLabel")
-local title_3 = Instance.new("TextLabel")
-local execute_2 = Instance.new("TextButton")
-local close = Instance.new("TextButton")
-local title_4 = Instance.new("ImageLabel")
+Instances.UICorner_2.Name = "UICorner"
+Instances.UICorner_2.CornerRadius = UDim.new(0, 4)
+Instances.UICorner_2.Parent = Instances.Clear
 
-local scriptselected = "none"
-local injected = false
+Instances.ImageButton.Name = "ImageButton"
+Instances.ImageButton.NextSelectionLeft = nil
+Instances.ImageButton.Active = true
+Instances.ImageButton.Selectable = true
+Instances.ImageButton.AnchorPoint = Vector2.new(0, 0)
+Instances.ImageButton.NextSelectionRight = nil
+Instances.ImageButton.ZIndex = 1
+Instances.ImageButton.AutomaticSize = Enum.AutomaticSize.None
+Instances.ImageButton.Size = UDim2.new(0, 14, 0, 14)
+Instances.ImageButton.Visible = true
+Instances.ImageButton.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Instances.ImageButton.NextSelectionDown = nil
+Instances.ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.ImageButton.SelectionOrder = 0
+Instances.ImageButton.SelectionImageObject = nil
+Instances.ImageButton.LayoutOrder = 0
+Instances.ImageButton.Rotation = 0
+Instances.ImageButton.ClipsDescendants = false
+Instances.ImageButton.BackgroundTransparency = 1
+Instances.ImageButton.Position = UDim2.new(0.159999996, 0, 0.25, 0)
+Instances.ImageButton.BorderMode = Enum.BorderMode.Outline
+Instances.ImageButton.NextSelectionUp = nil
+Instances.ImageButton.BorderSizePixel = 0
+Instances.ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Instances.ImageButton.Modal = false
+Instances.ImageButton.Selected = false
+Instances.ImageButton.Style = Enum.ButtonStyle.Custom
+Instances.ImageButton.AutoButtonColor = true
+Instances.ImageButton.ImageColor3 = Color3.fromRGB(255, 255, 255)
+Instances.ImageButton.HoverImage = ""
+Instances.ImageButton.ImageTransparency = 0
+Instances.ImageButton.PressedImage = ""
+Instances.ImageButton.ResampleMode = Enum.ResamplerMode.Default
+Instances.ImageButton.ImageRectOffset = Vector2.new(0, 0)
+Instances.ImageButton.TileSize = UDim2.new(1, 0, 1, 0)
+Instances.ImageButton.ImageRectSize = Vector2.new(0, 0)
+Instances.ImageButton.SliceScale = 1
+Instances.ImageButton.ScaleType = Enum.ScaleType.Stretch
+Instances.ImageButton.Image = "rbxassetid://11430231340"
+Instances.ImageButton.SliceCenter = Rect.new(Vector2.new(0, 0), Vector2.new(0, 0))
+Instances.ImageButton.Parent = Instances.Clear
 
---Properties:
+Instances.Execute.Name = "Execute"
+Instances.Execute.NextSelectionLeft = nil
+Instances.Execute.Active = true
+Instances.Execute.Selectable = true
+Instances.Execute.AnchorPoint = Vector2.new(0, 0)
+Instances.Execute.NextSelectionRight = nil
+Instances.Execute.ZIndex = 1
+Instances.Execute.AutomaticSize = Enum.AutomaticSize.None
+Instances.Execute.Size = UDim2.new(0, 87, 0, 27)
+Instances.Execute.Visible = true
+Instances.Execute.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Instances.Execute.NextSelectionDown = nil
+Instances.Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.Execute.SelectionOrder = 0
+Instances.Execute.SelectionImageObject = nil
+Instances.Execute.LayoutOrder = 0
+Instances.Execute.Rotation = 0
+Instances.Execute.ClipsDescendants = false
+Instances.Execute.BackgroundTransparency = 0
+Instances.Execute.Position = UDim2.new(0.854021609, 0, 0.892361104, 0)
+Instances.Execute.BorderMode = Enum.BorderMode.Outline
+Instances.Execute.NextSelectionUp = nil
+Instances.Execute.BorderSizePixel = 0
+Instances.Execute.BackgroundColor3 = Color3.fromRGB(54, 55, 54)
+Instances.Execute.Modal = false
+Instances.Execute.Selected = false
+Instances.Execute.Style = Enum.ButtonStyle.Custom
+Instances.Execute.AutoButtonColor = true
+Instances.Execute.TextYAlignment = Enum.TextYAlignment.Center
+Instances.Execute.RichText = false
+Instances.Execute.TextDirection = Enum.TextDirection.Auto
+Instances.Execute.TextColor3 = Color3.fromRGB(215, 215, 215)
+Instances.Execute.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+Instances.Execute.Text = "Execute    "
+Instances.Execute.TextXAlignment = Enum.TextXAlignment.Right
+Instances.Execute.TextStrokeTransparency = 1
+Instances.Execute.TextWrapped = false
+Instances.Execute.TextSize = 16
+Instances.Execute.TextTransparency = 0
+Instances.Execute.TextTruncate = Enum.TextTruncate.None
+Instances.Execute.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+Instances.Execute.MaxVisibleGraphemes = -1
+Instances.Execute.TextScaled = false
+Instances.Execute.LineHeight = 1
+Instances.Execute.Parent = Instances.exec
 
-SynapseXreal.Name = "Star Internal - Public Release v1.0.3"
-SynapseXreal.Parent = game.CoreGui
-SynapseXreal.ResetOnSpawn = false
+Instances.UICorner_3.Name = "UICorner"
+Instances.UICorner_3.CornerRadius = UDim.new(0, 4)
+Instances.UICorner_3.Parent = Instances.Execute
 
-MainFrame.Name = "MainFrame"
-MainFrame.Parent = SynapseXreal
-MainFrame.Active = true
-MainFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.0543109924, 0, 0.103222892, 0)
-MainFrame.Size = UDim2.new(0, 689, 0, 320)
+Instances.ImageButton_2.Name = "ImageButton"
+Instances.ImageButton_2.NextSelectionLeft = nil
+Instances.ImageButton_2.Active = true
+Instances.ImageButton_2.Selectable = true
+Instances.ImageButton_2.AnchorPoint = Vector2.new(0, 0)
+Instances.ImageButton_2.NextSelectionRight = nil
+Instances.ImageButton_2.ZIndex = 1
+Instances.ImageButton_2.AutomaticSize = Enum.AutomaticSize.None
+Instances.ImageButton_2.Size = UDim2.new(0, 14, 0, 14)
+Instances.ImageButton_2.Visible = true
+Instances.ImageButton_2.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Instances.ImageButton_2.NextSelectionDown = nil
+Instances.ImageButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.ImageButton_2.SelectionOrder = 0
+Instances.ImageButton_2.SelectionImageObject = nil
+Instances.ImageButton_2.LayoutOrder = 0
+Instances.ImageButton_2.Rotation = 0
+Instances.ImageButton_2.ClipsDescendants = false
+Instances.ImageButton_2.BackgroundTransparency = 1
+Instances.ImageButton_2.Position = UDim2.new(0.159999996, 0, 0.25, 0)
+Instances.ImageButton_2.BorderMode = Enum.BorderMode.Outline
+Instances.ImageButton_2.NextSelectionUp = nil
+Instances.ImageButton_2.BorderSizePixel = 0
+Instances.ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Instances.ImageButton_2.Modal = false
+Instances.ImageButton_2.Selected = false
+Instances.ImageButton_2.Style = Enum.ButtonStyle.Custom
+Instances.ImageButton_2.AutoButtonColor = true
+Instances.ImageButton_2.ImageColor3 = Color3.fromRGB(255, 255, 255)
+Instances.ImageButton_2.HoverImage = ""
+Instances.ImageButton_2.ImageTransparency = 0
+Instances.ImageButton_2.PressedImage = ""
+Instances.ImageButton_2.ResampleMode = Enum.ResamplerMode.Default
+Instances.ImageButton_2.ImageRectOffset = Vector2.new(0, 0)
+Instances.ImageButton_2.TileSize = UDim2.new(1, 0, 1, 0)
+Instances.ImageButton_2.ImageRectSize = Vector2.new(0, 0)
+Instances.ImageButton_2.SliceScale = 1
+Instances.ImageButton_2.ScaleType = Enum.ScaleType.Stretch
+Instances.ImageButton_2.Image = "rbxassetid://12967528364"
+Instances.ImageButton_2.SliceCenter = Rect.new(Vector2.new(0, 0), Vector2.new(0, 0))
+Instances.ImageButton_2.Parent = Instances.Execute
 
-bar.Name = "bar"
-bar.Parent = MainFrame
-bar.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-bar.BackgroundTransparency = 0.800
-bar.BorderSizePixel = 0
-bar.Position = UDim2.new(-0, 0, -0.00296382909, 0)
-bar.Size = UDim2.new(0, 689, 0, 25)
+Instances.UICorner_4.Name = "UICorner"
+Instances.UICorner_4.CornerRadius = UDim.new(0, 5)
+Instances.UICorner_4.Parent = Instances.exec
 
-Close.Name = "Close"
-Close.Parent = bar
-Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Close.BackgroundTransparency = 1.000
-Close.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Close.BorderSizePixel = 0
-Close.Position = UDim2.new(0.969521046, 0, 0, 0)
-Close.Size = UDim2.new(0, 21, 0, 25)
-Close.Font = Enum.Font.Arial
-Close.Text = "X"
-Close.TextColor3 = Color3.fromRGB(255, 255, 255)
-Close.TextSize = 14.000
-Close.MouseButton1Click:Connect(function()
-    SynapseXreal:Destroy()
+Instances.tab.Name = "tab"
+Instances.tab.NextSelectionLeft = nil
+Instances.tab.Active = false
+Instances.tab.Selectable = false
+Instances.tab.AnchorPoint = Vector2.new(0, 0)
+Instances.tab.NextSelectionRight = nil
+Instances.tab.ZIndex = 1
+Instances.tab.AutomaticSize = Enum.AutomaticSize.None
+Instances.tab.Size = UDim2.new(0, 121, 0, 27)
+Instances.tab.Visible = true
+Instances.tab.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Instances.tab.NextSelectionDown = nil
+Instances.tab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.tab.SelectionOrder = 0
+Instances.tab.SelectionImageObject = nil
+Instances.tab.LayoutOrder = 0
+Instances.tab.Rotation = 0
+Instances.tab.ClipsDescendants = false
+Instances.tab.BackgroundTransparency = 0.5
+Instances.tab.Position = UDim2.new(0.00616332842, 0, 0.111111112, 0)
+Instances.tab.BorderMode = Enum.BorderMode.Outline
+Instances.tab.NextSelectionUp = nil
+Instances.tab.BorderSizePixel = 0
+Instances.tab.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Instances.tab.Style = Enum.FrameStyle.Custom
+Instances.tab.Parent = Instances.exec
+
+Instances.UICorner_5.Name = "UICorner"
+Instances.UICorner_5.CornerRadius = UDim.new(0, 4)
+Instances.UICorner_5.Parent = Instances.tab
+
+Instances.greek.Name = "greek"
+Instances.greek.NextSelectionLeft = nil
+Instances.greek.Active = false
+Instances.greek.Selectable = false
+Instances.greek.AnchorPoint = Vector2.new(0, 0)
+Instances.greek.NextSelectionRight = nil
+Instances.greek.ZIndex = 1
+Instances.greek.AutomaticSize = Enum.AutomaticSize.None
+Instances.greek.Size = UDim2.new(0, 14, 0, 14)
+Instances.greek.Visible = true
+Instances.greek.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Instances.greek.NextSelectionDown = nil
+Instances.greek.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.greek.SelectionOrder = 0
+Instances.greek.SelectionImageObject = nil
+Instances.greek.LayoutOrder = 0
+Instances.greek.Rotation = 0
+Instances.greek.ClipsDescendants = false
+Instances.greek.BackgroundTransparency = 1
+Instances.greek.Position = UDim2.new(0.0636742935, 0, 0.222222224, 0)
+Instances.greek.BorderMode = Enum.BorderMode.Outline
+Instances.greek.NextSelectionUp = nil
+Instances.greek.BorderSizePixel = 0
+Instances.greek.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Instances.greek.TextYAlignment = Enum.TextYAlignment.Center
+Instances.greek.RichText = false
+Instances.greek.TextDirection = Enum.TextDirection.Auto
+Instances.greek.TextColor3 = Color3.fromRGB(186, 186, 186)
+Instances.greek.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+Instances.greek.Text = "Ω"
+Instances.greek.TextXAlignment = Enum.TextXAlignment.Center
+Instances.greek.TextStrokeTransparency = 1
+Instances.greek.TextWrapped = true
+Instances.greek.TextSize = 43
+Instances.greek.TextTransparency = 0
+Instances.greek.TextTruncate = Enum.TextTruncate.None
+Instances.greek.FontFace = Font.new("rbxasset://fonts/families/Arial.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+Instances.greek.MaxVisibleGraphemes = -1
+Instances.greek.TextScaled = true
+Instances.greek.LineHeight = 1
+Instances.greek.Parent = Instances.tab
+
+Instances.name.Name = "name"
+Instances.name.NextSelectionLeft = nil
+Instances.name.Active = true
+Instances.name.Selectable = true
+Instances.name.AnchorPoint = Vector2.new(0, 0)
+Instances.name.NextSelectionRight = nil
+Instances.name.ZIndex = 1
+Instances.name.AutomaticSize = Enum.AutomaticSize.None
+Instances.name.Size = UDim2.new(0, 85, 0, 14)
+Instances.name.Visible = true
+Instances.name.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Instances.name.NextSelectionDown = nil
+Instances.name.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.name.SelectionOrder = 0
+Instances.name.SelectionImageObject = nil
+Instances.name.LayoutOrder = 0
+Instances.name.Rotation = 0
+Instances.name.ClipsDescendants = false
+Instances.name.BackgroundTransparency = 1
+Instances.name.Position = UDim2.new(0.245492473, 0, 0.222222224, 0)
+Instances.name.BorderMode = Enum.BorderMode.Outline
+Instances.name.NextSelectionUp = nil
+Instances.name.BorderSizePixel = 0
+Instances.name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Instances.name.MultiLine = false
+Instances.name.CursorPosition = 1
+Instances.name.TextDirection = Enum.TextDirection.Auto
+Instances.name.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+Instances.name.TextStrokeTransparency = 1
+Instances.name.SelectionStart = -1
+Instances.name.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+Instances.name.PlaceholderText = ""
+Instances.name.TextSize = 14
+Instances.name.ShowNativeInput = true
+Instances.name.RichText = false
+Instances.name.TextColor3 = Color3.fromRGB(186, 186, 186)
+Instances.name.TextYAlignment = Enum.TextYAlignment.Center
+Instances.name.Text = "Script 0"
+Instances.name.LineHeight = 1
+Instances.name.TextWrapped = true
+Instances.name.TextTruncate = Enum.TextTruncate.None
+Instances.name.TextTransparency = 0
+Instances.name.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+Instances.name.TextXAlignment = Enum.TextXAlignment.Left
+Instances.name.TextEditable = true
+Instances.name.MaxVisibleGraphemes = -1
+Instances.name.TextScaled = true
+Instances.name.ClearTextOnFocus = true
+Instances.name.Parent = Instances.tab
+
+Instances.Code.Name = "Code"
+Instances.Code.NextSelectionLeft = nil
+Instances.Code.Active = false
+Instances.Code.Selectable = true
+Instances.Code.AnchorPoint = Vector2.new(0, 0)
+Instances.Code.NextSelectionRight = nil
+Instances.Code.ZIndex = 3
+Instances.Code.AutomaticSize = Enum.AutomaticSize.None
+Instances.Code.Size = UDim2.new(0, 631, 0, 185)
+Instances.Code.Visible = true
+Instances.Code.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Instances.Code.NextSelectionDown = nil
+Instances.Code.BorderColor3 = Color3.fromRGB(61, 61, 61)
+Instances.Code.SelectionOrder = 0
+Instances.Code.SelectionImageObject = nil
+Instances.Code.LayoutOrder = 0
+Instances.Code.Rotation = 0
+Instances.Code.ClipsDescendants = true
+Instances.Code.BackgroundTransparency = 0
+Instances.Code.Position = UDim2.new(0, 11, 0, 65)
+Instances.Code.BorderMode = Enum.BorderMode.Outline
+Instances.Code.NextSelectionUp = nil
+Instances.Code.BorderSizePixel = 0
+Instances.Code.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Instances.Code.ScrollBarImageColor3 = Color3.fromRGB(255, 255, 255)
+Instances.Code.MidImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+Instances.Code.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Right
+Instances.Code.AutomaticCanvasSize = Enum.AutomaticSize.XY
+Instances.Code.CanvasPosition = Vector2.new(0, 0)
+Instances.Code.VerticalScrollBarInset = Enum.ScrollBarInset.None
+Instances.Code.ScrollBarThickness = 4
+Instances.Code.ElasticBehavior = Enum.ElasticBehavior.WhenScrollable
+Instances.Code.ScrollBarImageTransparency = 0
+Instances.Code.TopImage = "rbxasset://textures/ui/Scroll/scroll-top.png"
+Instances.Code.ScrollingDirection = Enum.ScrollingDirection.XY
+Instances.Code.ScrollingEnabled = true
+Instances.Code.BottomImage = "rbxasset://textures/ui/Scroll/scroll-bottom.png"
+Instances.Code.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+Instances.Code.CanvasSize = UDim2.new(0, 908, 0, 180)
+Instances.Code.Parent = Instances.exec
+
+Instances.Source.Name = "Source"
+Instances.Source.NextSelectionLeft = nil
+Instances.Source.Active = true
+Instances.Source.Selectable = true
+Instances.Source.AnchorPoint = Vector2.new(0, 0)
+Instances.Source.NextSelectionRight = nil
+Instances.Source.ZIndex = 3
+Instances.Source.AutomaticSize = Enum.AutomaticSize.XY
+Instances.Source.Size = UDim2.new(1, 0, 1, 0)
+Instances.Source.Visible = true
+Instances.Source.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Instances.Source.NextSelectionDown = nil
+Instances.Source.BorderColor3 = Color3.fromRGB(53, 53, 53)
+Instances.Source.SelectionOrder = 0
+Instances.Source.SelectionImageObject = nil
+Instances.Source.LayoutOrder = 0
+Instances.Source.Rotation = 0
+Instances.Source.ClipsDescendants = false
+Instances.Source.BackgroundTransparency = 1
+Instances.Source.Position = UDim2.new(0, 0, 0, 0)
+Instances.Source.BorderMode = Enum.BorderMode.Outline
+Instances.Source.NextSelectionUp = nil
+Instances.Source.BorderSizePixel = 1
+Instances.Source.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Instances.Source.MultiLine = true
+Instances.Source.CursorPosition = 1
+Instances.Source.TextDirection = Enum.TextDirection.Auto
+Instances.Source.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+Instances.Source.TextStrokeTransparency = 1
+Instances.Source.SelectionStart = -1
+Instances.Source.PlaceholderColor3 = Color3.fromRGB(204, 204, 204)
+Instances.Source.PlaceholderText = ""
+Instances.Source.TextSize = 14
+Instances.Source.ShowNativeInput = true
+Instances.Source.RichText = true
+Instances.Source.TextColor3 = Color3.fromRGB(255, 255, 255)
+Instances.Source.TextYAlignment = Enum.TextYAlignment.Top
+Instances.Source.Text = "-- Welcome to star!"
+Instances.Source.LineHeight = 1
+Instances.Source.TextWrapped = false
+Instances.Source.TextTruncate = Enum.TextTruncate.None
+Instances.Source.TextTransparency = 0
+Instances.Source.FontFace = Font.new("rbxasset://fonts/families/Inconsolata.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+Instances.Source.TextXAlignment = Enum.TextXAlignment.Left
+Instances.Source.TextEditable = true
+Instances.Source.MaxVisibleGraphemes = -1
+Instances.Source.TextScaled = false
+Instances.Source.ClearTextOnFocus = false
+Instances.Source.Parent = Instances.Code
+
+Instances.TopBar.Name = "TopBar"
+Instances.TopBar.NextSelectionLeft = nil
+Instances.TopBar.Active = false
+Instances.TopBar.Selectable = false
+Instances.TopBar.AnchorPoint = Vector2.new(0, 0)
+Instances.TopBar.NextSelectionRight = nil
+Instances.TopBar.ZIndex = 1
+Instances.TopBar.AutomaticSize = Enum.AutomaticSize.None
+Instances.TopBar.Size = UDim2.new(0, 649, 0, 29)
+Instances.TopBar.Visible = true
+Instances.TopBar.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Instances.TopBar.NextSelectionDown = nil
+Instances.TopBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.TopBar.SelectionOrder = 0
+Instances.TopBar.SelectionImageObject = nil
+Instances.TopBar.LayoutOrder = 0
+Instances.TopBar.Rotation = 0
+Instances.TopBar.ClipsDescendants = false
+Instances.TopBar.BackgroundTransparency = 1
+Instances.TopBar.Position = UDim2.new(0, 0, 0, 0)
+Instances.TopBar.BorderMode = Enum.BorderMode.Outline
+Instances.TopBar.NextSelectionUp = nil
+Instances.TopBar.BorderSizePixel = 0
+Instances.TopBar.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+Instances.TopBar.Style = Enum.FrameStyle.Custom
+Instances.TopBar.Parent = Instances.exec
+
+Instances.Close.Name = "Close"
+Instances.Close.NextSelectionLeft = nil
+Instances.Close.Active = true
+Instances.Close.Selectable = true
+Instances.Close.AnchorPoint = Vector2.new(0, 0)
+Instances.Close.NextSelectionRight = nil
+Instances.Close.ZIndex = 3
+Instances.Close.AutomaticSize = Enum.AutomaticSize.None
+Instances.Close.Size = UDim2.new(0, 22, 0, 21)
+Instances.Close.Visible = true
+Instances.Close.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Instances.Close.NextSelectionDown = nil
+Instances.Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.Close.SelectionOrder = 0
+Instances.Close.SelectionImageObject = nil
+Instances.Close.LayoutOrder = 0
+Instances.Close.Rotation = 0
+Instances.Close.ClipsDescendants = false
+Instances.Close.BackgroundTransparency = 1
+Instances.Close.Position = UDim2.new(0.956191778, 0, 0.193246782, 0)
+Instances.Close.BorderMode = Enum.BorderMode.Outline
+Instances.Close.NextSelectionUp = nil
+Instances.Close.BorderSizePixel = 0
+Instances.Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Instances.Close.Modal = false
+Instances.Close.Selected = false
+Instances.Close.Style = Enum.ButtonStyle.Custom
+Instances.Close.AutoButtonColor = true
+Instances.Close.ImageColor3 = Color3.fromRGB(255, 255, 255)
+Instances.Close.HoverImage = "http://www.roblox.com/asset/?id=17169254131"
+Instances.Close.ImageTransparency = 0
+Instances.Close.PressedImage = ""
+Instances.Close.ResampleMode = Enum.ResamplerMode.Default
+Instances.Close.ImageRectOffset = Vector2.new(0, 0)
+Instances.Close.TileSize = UDim2.new(1, 0, 1, 0)
+Instances.Close.ImageRectSize = Vector2.new(0, 0)
+Instances.Close.SliceScale = 1
+Instances.Close.ScaleType = Enum.ScaleType.Stretch
+Instances.Close.Image = "rbxassetid://17133860592"
+Instances.Close.SliceCenter = Rect.new(Vector2.new(0, 0), Vector2.new(0, 0))
+Instances.Close.Parent = Instances.TopBar
+
+Instances.TextLabel.Name = "TextLabel"
+Instances.TextLabel.NextSelectionLeft = nil
+Instances.TextLabel.Active = false
+Instances.TextLabel.Selectable = false
+Instances.TextLabel.AnchorPoint = Vector2.new(0, 0)
+Instances.TextLabel.NextSelectionRight = nil
+Instances.TextLabel.ZIndex = 1
+Instances.TextLabel.AutomaticSize = Enum.AutomaticSize.None
+Instances.TextLabel.Size = UDim2.new(0, 172, 0, 20)
+Instances.TextLabel.Visible = true
+Instances.TextLabel.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Instances.TextLabel.NextSelectionDown = nil
+Instances.TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Instances.TextLabel.SelectionOrder = 0
+Instances.TextLabel.SelectionImageObject = nil
+Instances.TextLabel.LayoutOrder = 0
+Instances.TextLabel.Rotation = 0
+Instances.TextLabel.ClipsDescendants = false
+Instances.TextLabel.BackgroundTransparency = 1
+Instances.TextLabel.Position = UDim2.new(0.0180348065, 0, 0.193246782, 0)
+Instances.TextLabel.BorderMode = Enum.BorderMode.Outline
+Instances.TextLabel.NextSelectionUp = nil
+Instances.TextLabel.BorderSizePixel = 0
+Instances.TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Instances.TextLabel.TextYAlignment = Enum.TextYAlignment.Center
+Instances.TextLabel.RichText = false
+Instances.TextLabel.TextDirection = Enum.TextDirection.Auto
+Instances.TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+Instances.TextLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+Instances.TextLabel.Text = "star internal - discord.gg/6GmQnVBmrG"
+Instances.TextLabel.TextXAlignment = Enum.TextXAlignment.Center
+Instances.TextLabel.TextStrokeTransparency = 1
+Instances.TextLabel.TextWrapped = true
+Instances.TextLabel.TextSize = 14
+Instances.TextLabel.TextTransparency = 0
+Instances.TextLabel.TextTruncate = Enum.TextTruncate.None
+Instances.TextLabel.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
+Instances.TextLabel.MaxVisibleGraphemes = -1
+Instances.TextLabel.TextScaled = true
+Instances.TextLabel.LineHeight = 1
+Instances.TextLabel.Parent = Instances.TopBar
+
+-- Function "LocalScript"
+task.spawn(function()
+	local script = Instance.new("LocalScript", Instances.Clear)
+	local editor = script.Parent.Parent.Code.Source
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		editor.Text = ""
+		script.Parent.Parent.Code.SourceText.Value = ""
+		for i,v in pairs(editor:GetChildren()) do
+			if v:IsA("TextLabel") then
+				v.Text = ""
+			end
+		end
+	end)
 end)
 
-ImageLabel.Parent = MainFrame
-ImageLabel.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
-ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.0252733715, 0, 0.015625, 27)
-ImageLabel.Size = UDim2.new(0, 541, 0, 246)
-
-security.Name = "security"
-security.Parent = ImageLabel
-security.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-security.Size = UDim2.new(0, 552, 0, 258)
-security.Visible = false
-security.Font = Enum.Font.SourceSans
-security.TextColor3 = Color3.fromRGB(0, 0, 0)
-security.TextSize = 14.000
-
-EditorFrame.Name = "EditorFrame"
-EditorFrame.Parent = ImageLabel
-EditorFrame.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
-EditorFrame.BackgroundTransparency = 1.000
-EditorFrame.BorderColor3 = Color3.fromRGB(61, 61, 61)
-EditorFrame.Size = UDim2.new(1, 0, 1, 0)
-EditorFrame.ZIndex = 3
-EditorFrame.BottomImage = "rbxassetid://148970562"
-EditorFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
-EditorFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
-EditorFrame.MidImage = "rbxassetid://148970562"
-EditorFrame.ScrollBarThickness = 5
-EditorFrame.TopImage = "rbxassetid://148970562"
-
-Source.Name = "Source"
-Source.Parent = EditorFrame
-Source.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Source.BackgroundTransparency = 1.000
-Source.Position = UDim2.new(0, 30, 0, 0)
-Source.Size = UDim2.new(0.945652187, 0, 1, 0)
-Source.ZIndex = 3
-Source.ClearTextOnFocus = false
-Source.Font = Enum.Font.Code
-Source.MultiLine = true
-Source.PlaceholderColor3 = Color3.fromRGB(204, 204, 204)
-Source.Text = ""
-Source.TextColor3 = Color3.fromRGB(204, 204, 204)
-Source.TextSize = 15.000
-Source.TextXAlignment = Enum.TextXAlignment.Left
-Source.TextYAlignment = Enum.TextYAlignment.Top
-
-Comments_.Name = "Comments_"
-Comments_.Parent = Source
-Comments_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Comments_.BackgroundTransparency = 1.000
-Comments_.Size = UDim2.new(1, 0, 1, 0)
-Comments_.ZIndex = 5
-Comments_.Font = Enum.Font.Code
-Comments_.Text = ""
-Comments_.TextColor3 = Color3.fromRGB(59, 200, 59)
-Comments_.TextSize = 15.000
-Comments_.TextXAlignment = Enum.TextXAlignment.Left
-Comments_.TextYAlignment = Enum.TextYAlignment.Top
-
-Globals_.Name = "Globals_"
-Globals_.Parent = Source
-Globals_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Globals_.BackgroundTransparency = 1.000
-Globals_.Size = UDim2.new(1, 0, 1, 0)
-Globals_.ZIndex = 5
-Globals_.Font = Enum.Font.Code
-Globals_.Text = ""
-Globals_.TextColor3 = Color3.fromRGB(132, 214, 247)
-Globals_.TextSize = 15.000
-Globals_.TextXAlignment = Enum.TextXAlignment.Left
-Globals_.TextYAlignment = Enum.TextYAlignment.Top
-
-Keywords_.Name = "Keywords_"
-Keywords_.Parent = Source
-Keywords_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Keywords_.BackgroundTransparency = 1.000
-Keywords_.Size = UDim2.new(1, 0, 1, 0)
-Keywords_.ZIndex = 5
-Keywords_.Font = Enum.Font.Code
-Keywords_.Text = ""
-Keywords_.TextColor3 = Color3.fromRGB(248, 109, 124)
-Keywords_.TextSize = 15.000
-Keywords_.TextXAlignment = Enum.TextXAlignment.Left
-Keywords_.TextYAlignment = Enum.TextYAlignment.Top
-
-RemoteHighlight_.Name = "RemoteHighlight_"
-RemoteHighlight_.Parent = Source
-RemoteHighlight_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-RemoteHighlight_.BackgroundTransparency = 1.000
-RemoteHighlight_.Size = UDim2.new(1, 0, 1, 0)
-RemoteHighlight_.ZIndex = 5
-RemoteHighlight_.Font = Enum.Font.Code
-RemoteHighlight_.Text = ""
-RemoteHighlight_.TextColor3 = Color3.fromRGB(0, 144, 255)
-RemoteHighlight_.TextSize = 15.000
-RemoteHighlight_.TextXAlignment = Enum.TextXAlignment.Left
-RemoteHighlight_.TextYAlignment = Enum.TextYAlignment.Top
-
-Strings_.Name = "Strings_"
-Strings_.Parent = Source
-Strings_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Strings_.BackgroundTransparency = 1.000
-Strings_.Size = UDim2.new(1, 0, 1, 0)
-Strings_.ZIndex = 5
-Strings_.Font = Enum.Font.Code
-Strings_.Text = ""
-Strings_.TextColor3 = Color3.fromRGB(173, 241, 149)
-Strings_.TextSize = 15.000
-Strings_.TextXAlignment = Enum.TextXAlignment.Left
-Strings_.TextYAlignment = Enum.TextYAlignment.Top
-
-Tokens_.Name = "Tokens_"
-Tokens_.Parent = Source
-Tokens_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Tokens_.BackgroundTransparency = 1.000
-Tokens_.Size = UDim2.new(1, 0, 1, 0)
-Tokens_.ZIndex = 5
-Tokens_.Font = Enum.Font.Code
-Tokens_.Text = ""
-Tokens_.TextColor3 = Color3.fromRGB(255, 255, 255)
-Tokens_.TextSize = 15.000
-Tokens_.TextXAlignment = Enum.TextXAlignment.Left
-Tokens_.TextYAlignment = Enum.TextYAlignment.Top
-
-Numbers_.Name = "Numbers_"
-Numbers_.Parent = Source
-Numbers_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Numbers_.BackgroundTransparency = 1.000
-Numbers_.Size = UDim2.new(1, 0, 1, 0)
-Numbers_.ZIndex = 4
-Numbers_.Font = Enum.Font.Code
-Numbers_.Text = ""
-Numbers_.TextColor3 = Color3.fromRGB(255, 198, 0)
-Numbers_.TextSize = 15.000
-Numbers_.TextXAlignment = Enum.TextXAlignment.Left
-Numbers_.TextYAlignment = Enum.TextYAlignment.Top
-
-Lines.Name = "Lines"
-Lines.Parent = EditorFrame
-Lines.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Lines.BackgroundTransparency = 1.000
-Lines.Size = UDim2.new(0, 30, 1, 0)
-Lines.ZIndex = 4
-Lines.Font = Enum.Font.Code
-Lines.Text = "1"
-Lines.TextColor3 = Color3.fromRGB(255, 255, 255)
-Lines.TextSize = 15.000
-Lines.TextYAlignment = Enum.TextYAlignment.Top
-
-title.Name = "title"
-title.Parent = MainFrame
-title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title.BackgroundTransparency = 1.000
-title.Position = UDim2.new(0.330062926, 0, 0.00625000056, 0)
-title.Size = UDim2.new(0, 200, 0, 22)
-title.Font = Enum.Font.SourceSans
-title.Text = "Star Internal -v1.0"
-title.TextColor3 = Color3.fromRGB(255, 255, 255)
-title.TextSize = 16.000
-
-list.Name = "list"
-list.Parent = MainFrame
-list.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
-list.BorderSizePixel = 0
-list.Position = UDim2.new(0.820970535, 0, 0.100000001, 0)
-list.Size = UDim2.new(0, 114, 0, 246)
-
-execute.Name = "execute"
-execute.Parent = MainFrame
-execute.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
-execute.BackgroundTransparency = 0.800
-execute.BorderSizePixel = 0
-execute.Position = UDim2.new(0.0095389355, 0, 0.887499988, 0)
-execute.Size = UDim2.new(0, 92, 0, 30)
-execute.Font = Enum.Font.Arial
-execute.Text = "Execute"
-execute.TextColor3 = Color3.fromRGB(255, 255, 255)
-execute.TextSize = 14.000
-execute.MouseButton1Click:Connect(function()
-    if injected == true then
-        loadstring(Source.Text)()
-    end
-    if injected == false then
-        title.Text = "Star Internal - v1.0 (not injected! press attach)"
-    end
+-- Function "LocalScript"
+task.spawn(function()
+	local script = Instance.new("LocalScript", Instances.Execute)
+	script.Parent.MouseButton1Click:Connect(function()
+		local source = script.Parent.Parent.Code.SourceText.Value
+		if #source >= 16384 then
+			print"File too big. > 16,384 characters. [ROBLOX textbox limit]"
+		end
+	
+		local sourcewglobals = globals .. "\n\n" .. source
+	
+	
+		local exec, zac = LoadstringL(sourcewglobals)
+		exec()
+	end)
 end)
 
-clear.Name = "clear"
-clear.Parent = MainFrame
-clear.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
-clear.BackgroundTransparency = 0.800
-clear.BorderSizePixel = 0
-clear.Position = UDim2.new(0.154146105, 0, 0.887499988, 0)
-clear.Size = UDim2.new(0, 84, 0, 30)
-clear.Font = Enum.Font.Arial
-clear.Text = "Clear"
-clear.TextColor3 = Color3.fromRGB(255, 255, 255)
-clear.TextSize = 14.000
-clear.MouseButton1Click:Connect(function()
-    Source.Text = ""
+-- Function "LocalScript"
+task.spawn(function()
+	local script = Instance.new("LocalScript", Instances.Execute)
+	local button = script.Parent
+	local editor = script.Parent.Parent.Code.Source
+	button.MouseButton1Click:Connect(function()
+		loadstring(editor.Text)() -- Loadstring is broken in studio, dont worry!
+	end)
 end)
 
-scripthub.Name = "scripthub"
-scripthub.Parent = MainFrame
-scripthub.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
-scripthub.BackgroundTransparency = 0.800
-scripthub.BorderSizePixel = 0
-scripthub.Position = UDim2.new(0.871768773, 0, 0.887499988, 0)
-scripthub.Size = UDim2.new(0, 79, 0, 30)
-scripthub.Font = Enum.Font.Arial
-scripthub.Text = "Script Hub"
-scripthub.TextColor3 = Color3.fromRGB(255, 255, 255)
-scripthub.TextSize = 14.000
-scripthub.MouseButton1Click:Connect(function()
-    scripthub_2.Visible = true
+-- Function "ys"
+task.spawn(function()
+	local script = Instance.new("LocalScript", Instances.exec)
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
 end)
 
-Attach.Name = "Attach"
-Attach.Parent = MainFrame
-Attach.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
-Attach.BackgroundTransparency = 0.800
-Attach.BorderSizePixel = 0
-Attach.Position = UDim2.new(0.741144657, 0, 0.887499988, 0)
-Attach.Size = UDim2.new(0, 84, 0, 30)
-Attach.Font = Enum.Font.Arial
-Attach.Text = "Attach"
-Attach.TextColor3 = Color3.fromRGB(255, 255, 255)
-Attach.TextSize = 14.000
-Attach.MouseButton1Click:Connect(function()
-    print("Star has loaded!")
-    if injected == true then
-        title.Text = "Star Internal - v1.0.3 (already injected!)"
-        wait(1)
-        title.Text = "Star Internal - v1.0.3 (injected)"
-    end
-    if injected == false then
-        title.Text = "Star Internal - v1.0.3 (checking...)"
-        wait(0.1)
-        title.Text = "Star Internal - v1.0.3 (injecting...)"
-        wait(1.5)
-        setfpscap(1)
-        wait(1)
-        setfpscap(6969)
-        title.Text = "Star Internal - v1.0.3 (checking version...)"
-        wait(0.8)
-        title.Text = "Star Internal - v1.0.3 (scanning...)"
-        wait(0.3)
-        title.Text = "Star Internal - v1.0.3 (ready!)"
-        wait(0.5)
-        title.Text = "Star Internal - v1.0.3 (injected)"
-        injected = true
-    end
+-- Function "LocalScript"
+task.spawn(function()
+	local script = Instance.new("LocalScript", Instances.Close)
+	local theme = script.Parent.Parent.Parent
+	
+	script.Parent.Parent.Close.MouseButton1Click:Connect(function()
+		theme.Visible = not theme.Visible
+	end)
 end)
 
-title_2.Name = "title"
-title_2.Parent = MainFrame
-title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title_2.BackgroundTransparency = 1.000
-title_2.Position = UDim2.new(0.00870821718, 0, 0, 0)
-title_2.Size = UDim2.new(0, 18, 0, 24)
-title_2.ZIndex = 14
-title_2.Image = "http://www.roblox.com/asset/?id=7641125882"
-title_2.ImageRectSize = Vector2.new(138, 167)
-
-scripthub_2.Name = "scripthub"
-scripthub_2.Parent = SynapseXreal
-scripthub_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-scripthub_2.BorderSizePixel = 0
-scripthub_2.Position = UDim2.new(0.433135211, 0, 0.502979755, 0)
-scripthub_2.Size = UDim2.new(0, 290, 0, 305)
-scripthub_2.Visible = false
-scripthub_2.ZIndex = 100
-
-bar_2.Name = "bar"
-bar_2.Parent = scripthub_2
-bar_2.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-bar_2.BackgroundTransparency = 0.800
-bar_2.BorderSizePixel = 0
-bar_2.Position = UDim2.new(0, 0, -0.0029638072, 0)
-bar_2.Size = UDim2.new(0, 290, 0, 25)
-
-select.Name = "select"
-select.Parent = scripthub_2
-select.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
-select.BorderSizePixel = 0
-select.Position = UDim2.new(0.0299979374, 0, 0.104918033, 0)
-select.Size = UDim2.new(0, 82, 0, 264)
-select.ZIndex = 110
-
-dex.Name = "dex"
-dex.Parent = select
-dex.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
-dex.BackgroundTransparency = 1.000
-dex.BorderColor3 = Color3.fromRGB(0, 0, 49)
-dex.BorderSizePixel = 0
-dex.Position = UDim2.new(0.0121960752, 0, -1.49011612e-08, 0)
-dex.Size = UDim2.new(0, 80, 0, 18)
-dex.Font = Enum.Font.SourceSans
-dex.Text = " Dark Dex"
-dex.TextColor3 = Color3.fromRGB(255, 255, 255)
-dex.TextSize = 14.000
-dex.TextXAlignment = Enum.TextXAlignment.Left
-dex.ZIndex = 110
-dex.MouseButton1Click:Connect(function()
-    scriptselected = "dex"
-end)
-
-esp.Name = "esp"
-esp.Parent = select
-esp.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
-esp.BackgroundTransparency = 1.000
-esp.BorderColor3 = Color3.fromRGB(0, 0, 49)
-esp.BorderSizePixel = 0
-esp.Position = UDim2.new(0.0121960752, 0, 0.0681818053, 0)
-esp.Size = UDim2.new(0, 80, 0, 18)
-esp.Font = Enum.Font.SourceSans
-esp.Text = " Unnamed ESP"
-esp.TextColor3 = Color3.fromRGB(255, 255, 255)
-esp.TextSize = 14.000
-esp.TextXAlignment = Enum.TextXAlignment.Left
-esp.ZIndex = 110
-esp.MouseButton1Click:Connect(function()
-    scriptselected = "esp"
-end)
-
-spy.Name = "spy"
-spy.Parent = select
-spy.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
-spy.BackgroundTransparency = 1.000
-spy.BorderColor3 = Color3.fromRGB(0, 0, 49)
-spy.BorderSizePixel = 0
-spy.Position = UDim2.new(0.0121960752, 0, 0.136363626, 0)
-spy.Size = UDim2.new(0, 80, 0, 18)
-spy.Font = Enum.Font.SourceSans
-spy.Text = " Remote Spy"
-spy.TextColor3 = Color3.fromRGB(255, 255, 255)
-spy.TextSize = 14.000
-spy.TextXAlignment = Enum.TextXAlignment.Left
-spy.ZIndex = 110
-spy.MouseButton1Click:Connect(function()
-    scriptselected = "spy"
-end)
-
-dumper.Name = "dumper"
-dumper.Parent = select
-dumper.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
-dumper.BackgroundTransparency = 1.000
-dumper.BorderColor3 = Color3.fromRGB(0, 0, 49)
-dumper.BorderSizePixel = 0
-dumper.Position = UDim2.new(0.0121960752, 0, 0.204545438, 0)
-dumper.Size = UDim2.new(0, 80, 0, 18)
-dumper.Font = Enum.Font.SourceSans
-dumper.Text = " SaveInstance"
-dumper.TextColor3 = Color3.fromRGB(255, 255, 255)
-dumper.TextSize = 14.000
-dumper.TextXAlignment = Enum.TextXAlignment.Left
-dumper.ZIndex = 110
-dumper.MouseButton1Click:Connect(function()
-    scriptselected = "dumper"
-end)
-
-desc.Name = "desc"
-desc.Parent = scripthub_2
-desc.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
-desc.BorderSizePixel = 0
-desc.Position = UDim2.new(0.340342641, 0, 0.613114715, 0)
-desc.Size = UDim2.new(0, 184, 0, 69)
-desc.ZIndex = 110
-
-descri.Name = "descri"
-descri.Parent = desc
-descri.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-descri.BackgroundTransparency = 1.000
-descri.BorderSizePixel = 0
-descri.Position = UDim2.new(0.0112334546, 0, 0, 0)
-descri.Size = UDim2.new(0, 181, 0, 69)
-descri.Font = Enum.Font.SourceSans
-descri.Text = ""
-descri.TextColor3 = Color3.fromRGB(255, 255, 255)
-descri.TextSize = 15.000
-descri.TextWrapped = true
-descri.TextXAlignment = Enum.TextXAlignment.Left
-descri.TextYAlignment = Enum.TextYAlignment.Top
-descri.ZIndex = 125
-
-title_3.Name = "title"
-title_3.Parent = scripthub_2
-title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title_3.BackgroundTransparency = 1.000
-title_3.Position = UDim2.new(0.161097407, 0, -0.000307376496, 0)
-title_3.Size = UDim2.new(0, 200, 0, 22)
-title_3.Font = Enum.Font.SourceSans
-title_3.Text = "Star Internal - Script Hub"
-title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-title_3.TextSize = 16.000
-title_3.ZIndex = 110
-
-execute_2.Name = "execute"
-execute_2.Parent = scripthub_2
-execute_2.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
-execute_2.BackgroundTransparency = 0.800
-execute_2.BorderSizePixel = 0
-execute_2.Position = UDim2.new(0.34057343, 0, 0.871106505, 0)
-execute_2.Size = UDim2.new(0, 92, 0, 30)
-execute_2.Font = Enum.Font.Arial
-execute_2.Text = "Execute"
-execute_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-execute_2.TextSize = 14.000
-execute_2.ZIndex = 110
-execute_2.MouseButton1Click:Connect(function()
-    if injected == true then
-        if scriptselected == "dex" then
-            loadstring(game:HttpGet("https://pastebin.com/raw/J8AX35Fg"))()
-        end
-        if scriptselected == "spy" then
-            loadstring(game:HttpGet("https://pastebin.com/raw/u62hTuwR"))()
-        end
-        if scriptselected == "dumper" then
-            saveinstance()
-        end
-        if scriptselected == "esp" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua"))()
-        end
-        if scriptselected == "none" then
-        end
-    end
-    if injected == false then
-        execute_2.Text = "Not Attached!"
-        wait(1)
-        execute_2.Text = "Execute"
-    end
-end)
-
-close.Name = "close"
-close.Parent = scripthub_2
-close.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
-close.BackgroundTransparency = 0.800
-close.BorderSizePixel = 0
-close.Position = UDim2.new(0.685180664, 0, 0.871106505, 0)
-close.Size = UDim2.new(0, 84, 0, 30)
-close.Font = Enum.Font.Arial
-close.Text = "Close"
-close.TextColor3 = Color3.fromRGB(255, 255, 255)
-close.TextSize = 14.000
-close.ZIndex = 110
-close.MouseButton1Click:Connect(function()
-    scriptselected = "none"
-    scripthub_2.Visible = false
-end)
-
-title_4.Name = "title"
-title_4.Parent = scripthub_2
-title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title_4.BackgroundTransparency = 1.000
-title_4.Position = UDim2.new(0.00870821718, 0, 0, 0)
-title_4.Size = UDim2.new(0, 18, 0, 24)
-title_4.ZIndex = 110
-title_4.Image = "http://www.roblox.com/asset/?id=7641125882"
-title_4.ImageRectSize = Vector2.new(138, 167)
-
--- Scripts:
-
-local function SYHNK_fake_script() -- ImageLabel.LocalScript 
-    local script = Instance.new('LocalScript', ImageLabel)
-    local lua_keywords = {"and", "break", "do", "else", "elseif", "end", "false", "for", "function", "goto", "if", "in", "local", "nil", "not", "or", "repeat", "return", "then", "true", "until", "while"}
-    local global_env = {"getrawmetatable", "game", "workspace", "script", "math", "string", "table", "print", "wait", "BrickColor", "Color3", "next", "pairs", "ipairs", "select", "unpack", "Instance", "Vector2", "Vector3", "CFrame", "Ray", "UDim2", "Enum", "assert", "error", "warn", "tick", "loadstring", "_G", "shared", "getfenv", "setfenv", "newproxy", "setmetatable", "getmetatable", "os", "debug", "pcall", "ypcall", "xpcall", "rawequal", "rawset", "rawget", "tonumber", "tostring", "type", "typeof", "_VERSION", "coroutine", "delay", "require", "spawn", "LoadLibrary", "settings", "stats", "time", "UserSettings", "version", "Axes", "ColorSequence", "Faces", "ColorSequenceKeypoint", "NumberRange", "NumberSequence", "NumberSequenceKeypoint", "gcinfo", "elapsedTime", "collectgarbage", "PhysicalProperties", "Rect", "Region3", "Region3int16", "UDim", "Vector2int16", "Vector3int16"}
-    local Source = script.Parent.EditorFrame.Source
-    local Lines = Source.Parent.Lines
-    local Highlight = function(string, keywords)
-        local K = {}
-        local S = string
-        local Token =
-            {
-                ["="] = true,
-                ["."] = true,
-                [","] = true,
-                ["("] = true,
-                [")"] = true,
-                ["["] = true,
-                ["]"] = true,
-                ["{"] = true,
-                ["}"] = true,
-                [":"] = true,
-                ["*"] = true,
-                ["/"] = true,
-                ["+"] = true,
-                ["-"] = true,
-                ["%"] = true,
-                [";"] = true,
-                ["~"] = true
-            }
-        for i, v in pairs(keywords) do
-            K[v] = true
-        end
-        S = S:gsub(".", function(c)
-            if Token[c] ~= nil then
-                return "\32"
-            else
-                return c
-            end
-        end)
-        S = S:gsub("%S+", function(c)
-            if K[c] ~= nil then
-                return c
-            else
-                return (" "):rep(#c)
-            end
-        end)
-        return S
-    end
-    local hTokens = function(string)
-        local Token =
-            {
-                ["="] = true,
-                ["."] = true,
-                [","] = true,
-                ["("] = true,
-                [")"] = true,
-                ["["] = true,
-                ["]"] = true,
-                ["{"] = true,
-                ["}"] = true,
-                [":"] = true,
-                ["*"] = true,
-                ["/"] = true,
-                ["+"] = true,
-                ["-"] = true,
-                ["%"] = true,
-                [";"] = true,
-                ["~"] = true
-            }
-        local A = ""
-        string:gsub(".", function(c)
-            if Token[c] ~= nil then
-                A = A .. c
-            elseif c == "\n" then
-                A = A .. "\n"
-            elseif c == "\t" then
-                A = A .. "\t"
-            else
-                A = A .. "\32"
-            end
-        end)
-        return A
-    end
-
-    local strings = function(string)
-        local highlight = ""
-        local quote = false
-        string:gsub(".", function(c)
-            if quote == false and c == "\"" then
-                quote = true
-            elseif quote == true and c == "\"" then
-                quote = false
-            end
-            if quote == false and c == "\"" then
-                highlight = highlight .. "\""
-            elseif c == "\n" then
-                highlight = highlight .. "\n"
-            elseif c == "\t" then
-                highlight = highlight .. "\t"
-            elseif quote == true then
-                highlight = highlight .. c
-            elseif quote == false then
-                highlight = highlight .. "\32"
-            end
-        end)
-        return highlight
-    end
-    local comments = function(string)
-        local ret = ""
-        string:gsub("[^\r\n]+", function(c)
-            local comm = false
-            local i = 0
-            c:gsub(".", function(n)
-                i = i + 1
-                if c:sub(i, i + 1) == "--" then
-                    comm = true
-                end
-                if comm == true then
-                    ret = ret .. n
-                else
-                    ret = ret .. "\32"
-                end
-            end)
-            ret = ret
-        end)
-        return ret
-    end
-    local numbers = function(string)
-        local A = ""
-        string:gsub(".", function(c)
-            if tonumber(c) ~= nil then
-                A = A .. c
-            elseif c == "\n" then
-                A = A .. "\n"
-            elseif c == "\t" then
-                A = A .. "\t"
-            else
-                A = A .. "\32"
-            end
-        end)
-        return A
-    end
-    local highlight_source = function(type)
-        if type == "Text" then
-            Source.Text = Source.Text:gsub("\13", "")
-            Source.Text = Source.Text:gsub("\t", "      ")
-            local s = Source.Text
-            Source.Keywords_.Text = Highlight(s, lua_keywords)
-            Source.Globals_.Text = Highlight(s, global_env)
-            Source.RemoteHighlight_.Text = Highlight(s, {"FireServer", "fireServer", "InvokeServer", "invokeServer"})
-            Source.Tokens_.Text = hTokens(s)
-            Source.Numbers_.Text = numbers(s)
-            Source.Strings_.Text = strings(s)
-            local lin = 1
-            s:gsub("\n", function()
-                lin = lin + 1
-            end)
-            Lines.Text = ""
-            for i = 1, lin do
-                Lines.Text = Lines.Text .. i .. "\n"
-            end
-        end
-    end
-    highlight_source("Text")
-    Source.Changed:Connect(highlight_source)
-end
-coroutine.wrap(SYHNK_fake_script)()
-local function AMNA_fake_script() -- MainFrame.Dragging 
-    local script = Instance.new('LocalScript', MainFrame)
-
-    local UserInputService = game:GetService("UserInputService")
-
-    local gui = script.Parent
-
-    local dragging
-    local dragInput
-    local dragStart
-    local startPos
-
-    local function update(input)
-        local delta = input.Position - dragStart
-        gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-    end
-
-    gui.InputBegan:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-            dragging = true
-            dragStart = input.Position
-            startPos = gui.Position
-
-            input.Changed:Connect(function()
-                if input.UserInputState == Enum.UserInputState.End then
-                    dragging = false
-                end
-            end)
-        end
-    end)
-
-    gui.InputChanged:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-            dragInput = input
-        end
-    end)
-
-    UserInputService.InputChanged:Connect(function(input)
-        if input == dragInput and dragging then
-            update(input)
-        end
-    end)
-end
-coroutine.wrap(AMNA_fake_script)()
-local function VEUJFP_fake_script() -- scripthub_2.Dragging 
-    local script = Instance.new('LocalScript', scripthub_2)
-
-    local UserInputService = game:GetService("UserInputService")
-
-    local gui = script.Parent
-
-    local dragging
-    local dragInput
-    local dragStart
-    local startPos
-
-    local function update(input)
-        local delta = input.Position - dragStart
-        gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-    end
-
-    gui.InputBegan:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-            dragging = true
-            dragStart = input.Position
-            startPos = gui.Position
-
-            input.Changed:Connect(function()
-                if input.UserInputState == Enum.UserInputState.End then
-                    dragging = false
-                end
-            end)
-        end
-    end)
-
-    gui.InputChanged:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-            dragInput = input
-        end
-    end)
-
-    UserInputService.InputChanged:Connect(function(input)
-        if input == dragInput and dragging then
-            update(input)
-        end
-    end)
-end
-coroutine.wrap(VEUJFP_fake_script)()
-while true do
-    wait(0.01)
-    if scripthub_2.Visible == true then
-        if scriptselected == "none" then
-            descri.Text = ""
-        end
-        if scriptselected == "dex" then
-            descri.Text = "A version of the popular Dex explorer with patches specifically for Synapse."
-        end
-        if scriptselected == "esp" then
-            descri.Text = "ESP Made by ic3w0lf using the Drawing API."
-        end
-        if scriptselected == "spy" then
-            descri.Text = "Allows you to view RemoteEvents and RemoteFunctions called."
-        end
-        if scriptselected == "dumper" then
-            descri.Text = "Dumps the place as a .rbxl file in your workspace folder."
-        end
-    end
-end
+--[[ End of generation. ]]
